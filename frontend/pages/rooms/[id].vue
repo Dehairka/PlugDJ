@@ -5,11 +5,9 @@
             <div class="player">
                 player
             </div>
-            <div class="nav">
-                nav
-            </div>
+            <RoomNav class="nav"></RoomNav>
         </div>
-        <Tchat class="roomPage_tchat"></Tchat>
+        <RoomTchat class="roomPage_tchat"></RoomTchat>
     </div>
 </template>
 
@@ -44,7 +42,6 @@ export default {
             .nav{
                 height: 10vh;
                 border-top: 2px solid $light;
-                // background-color: aqua;
             }
         }
         &_tchat{
@@ -52,7 +49,6 @@ export default {
             max-width: 400px;
             height: 92.3vh;
             border-left: 2px solid $light;
-            // background-color: red;
         }
 }
 </style>
