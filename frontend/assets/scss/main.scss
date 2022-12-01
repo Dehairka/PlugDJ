@@ -1,0 +1,96 @@
+  *{ 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    box-sizing: border-box;
+  }
+  h1{
+    font-weight: 400;
+    margin: 0;
+    font-family: "HelloZone";
+    font-size: 4em;
+  }
+  h1,h2,h3,h4{
+    margin: 0;
+    
+  }
+  ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  a{
+    text-decoration: none;
+    color: $primary;
+    transition: 0.4s;
+  }
+  a:hover{
+    color: $white;
+  }
+  input:autofill, input:-webkit-autofill{
+    -webkit-text-fill-color: $dark;
+    -webkit-box-shadow: 0 0 0px 40rem $primary inset;
+  }
+  .uppercase{
+    text-transform: uppercase;
+  }
+  .opacity{
+    color: rgba($color: $white, $alpha: 0.5)
+  }
+  .stroked{
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+  }
+  .graded{
+    background: linear-gradient(90deg, rgba(244,107,69,1) 0%, rgba(238,168,73,1) 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.4s;
+
+      &:hover{
+        background: transparent;
+        color: white;
+        -webkit-background-clip: border-box;
+        -webkit-text-fill-color: inherit;
+      }
+  }
+  .gap{
+    margin: 32 px;
+  }
+  .pointer{
+    cursor: pointer;
+  }
+  .display-none{
+    display: none!important;
+  }
+
+  //SELECTION
+  ::selection {
+    color: white;
+    background: $primary;
+  }
+
+//SCROLLBAR
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: $primary;
+}
+
+//FONTS
+@font-face {
+  font-family: "HelloZone";
+  src: local("HelloZone"),
+   url(~/assets/fonts/HelloZone.ttf) format("truetype");
+}

@@ -1,0 +1,36 @@
+.btn{
+    background-color: $primary;
+    // background: rgb(244,107,69);
+    background: linear-gradient(90deg, rgba(244,107,69,1) 0%, rgba(238,168,73,1) 100%);
+    color: white;
+    padding: 16px 32px;
+    // transition: 1s;
+    border: 2px solid $primary;
+    border-radius: 32px;
+    font-size: 1.2em;
+
+    &:hover:not([disabled]){
+        cursor: pointer;
+        background: linear-gradient(90deg, rgba(244,107,69,0.7) 0%, rgba(238,168,73,0.7) 100%);
+
+    }
+
+    &:disabled{
+        opacity: 0.5;
+    }
+}
+
+.btn--outline{
+    // background: transparent;
+    border: 2px solid $primary;
+    // color: $white;
+    background: linear-gradient(90deg, rgba(244,107,69,1) 0%, rgba(238,168,73,1) 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    &:hover{
+        color: $white;
+        -webkit-background-clip:inherit;
+        -webkit-text-fill-color:inherit;
+    }
+}
