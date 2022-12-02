@@ -39,6 +39,7 @@ html,body{
    color: $light;
    font-family: 'Poppins', sans-serif;
   //  box-sizing: border-box;
+//   font-size: 0.5vw;
 }
 
 .defaultLayout{
@@ -50,7 +51,8 @@ html,body{
           align-items: center;
           justify-content: space-between;
           padding: 16px;
-          border-bottom: 2px solid $light;
+          border-bottom: 1px solid $light;
+          position: relative;
           .title{
                display: flex;
                // justify-content: center;

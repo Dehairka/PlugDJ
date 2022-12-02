@@ -117,7 +117,7 @@ export default {
         height: 9%;
         // background-color: green;
         display: flex;
-        border-top: 2px solid $light;
+        border-top: 1px solid $light;
         .message{
             height: 100%;
             flex: 1;
