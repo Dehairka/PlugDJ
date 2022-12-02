@@ -625,6 +625,11 @@
   resolved "https://registry.yarnpkg.com/@types/resolve/-/resolve-1.20.2.tgz#97d26e00cd4a0423b4af620abecf3e6f442b7975"
   integrity sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==
 
+"@types/youtube@^0.0.39":
+  version "0.0.39"
+  resolved "https://registry.yarnpkg.com/@types/youtube/-/youtube-0.0.39.tgz#1c80e882d339a4d89da16b10acc411ceadc26955"
+  integrity sha512-naVjyTZT/CoNwEQW3+mf9E/x6sgB7QIPbRDtVlPUpHlmuQTk+j6gQBy0T5CRkV8oC0GYQjMgfr3VdueTSVLTjw==
+
 "@unhead/dom@1.0.4", "@unhead/dom@^1.0.4":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@unhead/dom/-/dom-1.0.4.tgz#125bb521c240436c177efa843e989a185148309d"
@@ -1313,6 +1318,11 @@ cookie-es@^0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/cookie-es/-/cookie-es-0.5.0.tgz#a6ad89923e68c542fc9e760b07aefa5ab020d719"
   integrity sha512-RyZrFi6PNpBFbIaQjXDlFIhFVqV42QeKSZX1yQIl6ihImq6vcHNGMtqQ/QzY3RMPuYSkvsRwtnt5M9NeYxKt0g==
+
+core-js@^3.6.5:
+  version "3.26.1"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.26.1.tgz#7a9816dabd9ee846c1c0fe0e8fcad68f3709134e"
+  integrity sha512-21491RRQVzUn0GGM9Z1Jrpr6PNPxPi+Za8OM9q4tksTSnlbXXGKK1nXNg/QvwFYettXvSX6zWKCtHHfjN4puyA==
 
 core-util-is@~1.0.0:
   version "1.0.3"
@@ -2023,6 +2033,11 @@ get-stream@^6.0.0:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/get-stream/-/get-stream-6.0.1.tgz#a262d8eef67aced57c2852ad6167526a43cbf7b7"
   integrity sha512-ts6Wi+2j3jQjqi70w5AlN8DFnkSwC+MqmxEzdEALB2qXZYV3X/b1CTfgPLGJNMeAWxdPfU8FO1ms3NUfaHCPYg==
+
+get-youtube-id@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/get-youtube-id/-/get-youtube-id-1.0.1.tgz#adb6f475e292d98f98ed5bfb530887656193e157"
+  integrity sha512-5yidLzoLXbtw82a/Wb7LrajkGn29BM6JuLWeHyNfzOGp1weGyW4+7eMz6cP23+etqj27VlOFtq8fFFDMLq/FXQ==
 
 git-config-path@^2.0.0:
   version "2.0.0"
@@ -4454,7 +4469,17 @@ vue-router@^4.1.6:
   dependencies:
     "@vue/devtools-api" "^6.4.5"
 
-vue@^3.2.45:
+vue3-youtube@^0.1.9:
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/vue3-youtube/-/vue3-youtube-0.1.9.tgz#2ed953d15b3f0a8fc81a16e2fe024407ea5a407c"
+  integrity sha512-DhEbLsXDRHF7Cf5eB8vuoAbK+WiFuOHa65vlHU3XE5xky058ZK5/jAtHGr+JGhW0Xy2bSl8Eezz6/cR8GmNzgw==
+  dependencies:
+    "@types/youtube" "^0.0.39"
+    core-js "^3.6.5"
+    get-youtube-id "^1.0.1"
+    vue "^3.0.0"
+
+vue@^3.0.0, vue@^3.2.45:
   version "3.2.45"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.2.45.tgz#94a116784447eb7dbd892167784619fef379b3c8"
   integrity sha512-9Nx/Mg2b2xWlXykmCwiTUCWHbWIj53bnkizBxKai1g61f2Xit700A1ljowpTIM11e3uipOeiPcSqnmBg6gyiaA==

@@ -3,7 +3,13 @@
         <!-- <h2>Room id : {{$route.params.id}}</h2> -->
         <div class="roomPage_content">
             <div class="player">
-                player
+                <YouTube
+                class="player--youtube"
+                src="https://www.youtube.com/watch?v=jNQXAC9IVRw"
+                ref="youtube"
+                width="100%"
+                height="100%"
+                :vars="youtubeOptions" />
             </div>
             <RoomNav class="nav"></RoomNav>
         </div>
@@ -13,7 +19,14 @@
 
 <script>
 export default {
-
+    data(){
+        return{
+            youtubeOptions: {
+                autoplay: false,
+                controls: 0
+            }
+        }
+    }
 }
 </script>
 
@@ -36,19 +49,22 @@ export default {
             flex: 1;
             // background-color: green;
             .player{
-                height: 100vh;
+                height: 100%;
                 // background-color: yellow;
+                .player--youtube{
+                    width: 100%;
+                    height: 100%;
+                }
             }
             .nav{
-                height: 10vh;
-                border-top: 2px solid $light;
+                // height: 8.4vh;
+                border-top: 1px solid $light;
             }
         }
         &_tchat{
-            min-width: 400px;
-            max-width: 400px;
-            height: 92.3vh;
-            border-left: 2px solid $light;
+            width: 25%;
+            height: 100%;
+            border-left: 1px solid $light;
         }
 }
 </style>
